@@ -1,0 +1,19 @@
+﻿<Window x:Class="WpfApp4.Добавить_тип"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp4"
+        mc:Ignorable="d"
+        Title="Добавить_тип" Height="150" Width="400">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button Content="Добавить новый тип" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" Height="45" Width="400" Click="Button_Click"/>
+        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="Введите тип добавляемой записи" VerticalAlignment="Center" Height="45" Width="400" TextAlignment="Center"/>
+        <TextBox x:Name="typeBox" HorizontalAlignment="Center" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="400" Height="44" TextAlignment="Center"/>
+    </Grid>
+</Window>
